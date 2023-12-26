@@ -1,0 +1,6 @@
+- apt-get update -y
+- apt-get install -y curl
+- curl https://raw.githubusercontent.com/sjwhitworth/vps-setup/master/.vps_keys > /etc/ssh/ssh_key
+- chmod 400 /etc/ssh/ssh_key
+- systemctl enable ssh
+- systemctl start ssh
